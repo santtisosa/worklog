@@ -1,0 +1,36 @@
+{
+  "name": "worklog",
+  "version": "0.1.0",
+  "description": "Time you actively work with Claude, per repo and branch (or ticket), with a weekly view and a CSV timesheet.",
+  "author": {
+    "name": "Santiago Sosa",
+    "url": "https://github.com/santtisosa"
+  },
+  "homepage": "https://github.com/santtisosa/worklog",
+  "repository": "https://github.com/santtisosa/worklog",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "mod",
+    "claude-code-mods"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "placement": {
+      "type": "string",
+      "title": "Placement",
+      "description": "hint: dim text at the end of the hint line under the prompt. status: a pinned notice under the prompt.",
+      "default": "hint",
+      "options": [
+        "hint",
+        "status"
+      ]
+    },
+    "idleMinutes": {
+      "type": "number",
+      "title": "Idle after (minutes)",
+      "description": "A pause between a reply and your next prompt longer than this does not count as work.",
+      "default": 5
+    }
+  }
+}

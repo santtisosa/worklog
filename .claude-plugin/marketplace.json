@@ -1,0 +1,16 @@
+{
+  "name": "worklog",
+  "owner": {
+    "name": "Santiago Sosa"
+  },
+  "metadata": {
+    "description": "Time you actively work with Claude, per repo and branch (or ticket), with a weekly view and a CSV timesheet."
+  },
+  "plugins": [
+    {
+      "name": "worklog",
+      "source": "./",
+      "description": "Time you actively work with Claude, per repo and branch (or ticket), with a weekly view and a CSV timesheet."
+    }
+  ]
+}
